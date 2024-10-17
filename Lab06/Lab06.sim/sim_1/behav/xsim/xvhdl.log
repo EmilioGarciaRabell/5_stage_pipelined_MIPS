@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/InstructionMemory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'InstructionMemory'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/InstructionFetch.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'InstructionFetch'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/MipsProc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MipsProc'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sim_1/new/MipsPTB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MipsPTB'

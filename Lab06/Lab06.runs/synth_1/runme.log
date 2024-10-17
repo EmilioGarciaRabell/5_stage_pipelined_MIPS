@@ -1,0 +1,637 @@
+
+*** Running vivado
+    with args -log MipsProc.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MipsProc.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source MipsProc.tcl -notrace
+Command: synth_design -top MipsProc -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16952 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 495.863 ; gain = 185.730
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MipsProc' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/MipsProc.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'InstructionFetch' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/InstructionFetch.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'InstructionMemory' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/InstructionMemory.vhd:54]
+	Parameter Height bound to: 1024 - type: integer 
+	Parameter address bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'InstructionMemory' (1#1) [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/InstructionMemory.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'InstructionFetch' (2#1) [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/InstructionFetch.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'InstructionDecode' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/InstructionDecode.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'RegisterFile' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RegisterFile.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'RegisterFile' (3#1) [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RegisterFile.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'ControlUnit' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/ControlUnit.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'ControlUnit' (4#1) [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/ControlUnit.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'InstructionDecode' (5#1) [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/InstructionDecode.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'execute' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Execute.vhd:49]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu4' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/alu4.vhd:19' bound to instance 'alu' of component 'alu4' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Execute.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'alu4' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/alu4.vhd:33]
+	Parameter N bound to: 32 - type: integer 
+	Parameter M bound to: 5 - type: integer 
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'LogAND' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/LogAND.vhd:6' bound to instance 'and_comp' of component 'LogAND' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/alu4.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'LogAND' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/LogAND.vhd:13]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'LogAND' (6#1) [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/LogAND.vhd:13]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'LogOR' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/LogOR.vhd:6' bound to instance 'or_comp' of component 'LogOR' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/alu4.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'LogOR' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/LogOR.vhd:13]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'LogOR' (7#1) [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/LogOR.vhd:13]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'LogXOR' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/LogXOR.vhd:6' bound to instance 'xor_comp' of component 'LogXOR' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/alu4.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'LogXOR' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/LogXOR.vhd:13]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'LogXOR' (8#1) [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/LogXOR.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'sllN' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/sllN.vhd:29]
+	Parameter N bound to: 32 - type: integer 
+	Parameter M bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sllN' (9#1) [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/sllN.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'srlN' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/srlN.vhd:29]
+	Parameter N bound to: 32 - type: integer 
+	Parameter M bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'srlN' (10#1) [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/srlN.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'ShiftArithmeticRight' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/ShiftArithmeticRight.vhd:29]
+	Parameter N bound to: 32 - type: integer 
+	Parameter M bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ShiftArithmeticRight' (11#1) [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/ShiftArithmeticRight.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'RplCarryAdr' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:37]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst0' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'FullAdder' (12#1) [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:12]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'FullAddrInst' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'RplCarryAdr' (13#1) [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/RplCarryAdr.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'multiplier' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:15]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_row0' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:13]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'and_mult' (14#1) [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:13]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_row0' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:47]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_row0' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:47]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_row0' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:47]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_row0' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:47]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_row0' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:47]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_row0' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:47]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_row0' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:47]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_row0' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:47]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_row0' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:47]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_row0' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:47]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_row0' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:47]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_row0' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:47]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_row0' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:47]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_row0' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:47]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_row0' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:47]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_rows1_3' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:53]
+INFO: [Synth 8-3491] module 'halfaddr' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/HalfAddr.vhd:5' bound to instance 'ha_colo' of component 'HalfAddr' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'halfaddr' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/HalfAddr.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'halfaddr' (15#1) [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/HalfAddr.vhd:12]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_rows1_3' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:53]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'fa_col1_2' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:62]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_rows1_3' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:53]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'fa_col1_2' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:62]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_rows1_3' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:53]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'fa_col1_2' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:62]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_rows1_3' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:53]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'fa_col1_2' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:62]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_rows1_3' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:53]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'fa_col1_2' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:62]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_rows1_3' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:53]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'fa_col1_2' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:62]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_rows1_3' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:53]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'fa_col1_2' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:62]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_rows1_3' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:53]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'fa_col1_2' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:62]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_rows1_3' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:53]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'fa_col1_2' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:62]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_rows1_3' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:53]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'fa_col1_2' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:62]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_rows1_3' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:53]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'fa_col1_2' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:62]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_rows1_3' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:53]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'fa_col1_2' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:62]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_rows1_3' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:53]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'fa_col1_2' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:62]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_rows1_3' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:53]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'fa_col1_2' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:62]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_rows1_3' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:53]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'fa_col3' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:66]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_rows1_3' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:53]
+INFO: [Synth 8-3491] module 'halfaddr' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/HalfAddr.vhd:5' bound to instance 'ha_colo' of component 'HalfAddr' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:56]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_rows1_3' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:53]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'fa_col1_2' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:62]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_rows1_3' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:53]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'fa_col1_2' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:62]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_rows1_3' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:53]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'fa_col1_2' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:62]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_rows1_3' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:53]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'fa_col1_2' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:62]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_rows1_3' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:53]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'fa_col1_2' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:62]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_rows1_3' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:53]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'fa_col1_2' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:62]
+INFO: [Synth 8-3491] module 'and_mult' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/and_mult.vhd:6' bound to instance 'and_rows1_3' of component 'and_mult' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:53]
+INFO: [Synth 8-3491] module 'FullAdder' declared at 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/FullAdder.vhd:5' bound to instance 'fa_col1_2' of component 'FullAdder' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:62]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'multiplier' (16#1) [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Multiplier.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'alu4' (17#1) [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/alu4.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'execute' (18#1) [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/Execute.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'MemoryStage' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/MemoryStage.vhd:32]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_SPACE bound to: 10 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'DataMemory' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/DataMemory.vhd:21]
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_SPACE bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'DataMemory' (19#1) [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/DataMemory.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'SevenSegController' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/seven_seg_controller.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'BCDSevenSegConverter' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/bcd_seven_seg_converter.vhd:12]
+INFO: [Synth 8-226] default block is never used [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/bcd_seven_seg_converter.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'BCDSevenSegConverter' (20#1) [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/bcd_seven_seg_converter.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'SevenSegController' (21#1) [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/seven_seg_controller.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'MemoryStage' (22#1) [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/MemoryStage.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'WritebackStage' [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/WritebackStage.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'WritebackStage' (23#1) [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/WritebackStage.vhd:20]
+WARNING: [Synth 8-3848] Net MemoryStage_clk in module/entity MipsProc does not have driver. [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/MipsProc.vhd:187]
+WARNING: [Synth 8-3848] Net MemoryStage_rst in module/entity MipsProc does not have driver. [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/MipsProc.vhd:188]
+WARNING: [Synth 8-3848] Net MemoryStage_MemWrite in module/entity MipsProc does not have driver. [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/MipsProc.vhd:192]
+WARNING: [Synth 8-3848] Net Execute_Switch in module/entity MipsProc does not have driver. [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/MipsProc.vhd:185]
+WARNING: [Synth 8-3848] Net InstructionDecode_RegWriteData in module/entity MipsProc does not have driver. [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/MipsProc.vhd:171]
+WARNING: [Synth 8-3848] Net Memory_seven in module/entity MipsProc does not have driver. [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/MipsProc.vhd:196]
+INFO: [Synth 8-256] done synthesizing module 'MipsProc' (24#1) [C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.srcs/sources_1/new/MipsProc.vhd:33]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 565.660 ; gain = 255.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 565.660 ; gain = 255.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 565.660 ; gain = 255.527
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-5587] ROM size for "ALUControl" is below threshold of ROM address width. It will be mapped to LUTs
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 565.660 ; gain = 255.527
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   3 Input      1 Bit         XORs := 257   
+	   2 Input      1 Bit         XORs := 47    
++---Registers : 
+	               32 Bit    Registers := 10    
+	               16 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---RAMs : 
+	              32K Bit         RAMs := 1     
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input      5 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module MipsProc 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 9     
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
+Module InstructionMemory 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module RegisterFile 
+Detailed RTL Component Info : 
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module ControlUnit 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      4 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module InstructionDecode 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module LogXOR 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+Module FullAdder 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+Module RplCarryAdr 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 32    
+Module halfaddr 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module execute 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+Module DataMemory 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
++---RAMs : 
+	              32K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module SevenSegController 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+Module WritebackStage 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5587] ROM size for "InstructionDecodeInst/ControlUnit_inst/ALUControl" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-3971] The signal "MipsProc/InstructionDecodeInst/RegisterFile_inst/arrayRegisters_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3886] merging instance 'InstructionDecode_Instruction_reg[16]' (FD) to 'InstructionDecode_Instruction_reg_rep_bsel[16]'
+INFO: [Synth 8-3886] merging instance 'InstructionDecode_Instruction_reg[17]' (FD) to 'InstructionDecode_Instruction_reg_rep_bsel[17]'
+INFO: [Synth 8-3886] merging instance 'InstructionDecode_Instruction_reg[18]' (FD) to 'InstructionDecode_Instruction_reg_rep_bsel[18]'
+INFO: [Synth 8-3886] merging instance 'InstructionDecode_Instruction_reg[19]' (FD) to 'InstructionDecode_Instruction_reg_rep_bsel[19]'
+INFO: [Synth 8-3886] merging instance 'InstructionDecode_Instruction_reg[20]' (FD) to 'InstructionDecode_Instruction_reg_rep_bsel[20]'
+INFO: [Synth 8-3886] merging instance 'Execute_RdDest_reg[0]' (FD) to 'Execute_SignImm_reg[11]'
+INFO: [Synth 8-3886] merging instance 'Execute_RdDest_reg[1]' (FD) to 'Execute_SignImm_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Execute_RdDest_reg[2]' (FD) to 'Execute_SignImm_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Execute_RdDest_reg[3]' (FD) to 'Execute_SignImm_reg[14]'
+INFO: [Synth 8-3886] merging instance 'Execute_RdDest_reg[4]' (FD) to 'Execute_SignImm_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\InstructionFetchInst/pc_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\InstructionFetchInst/pc_reg[1] )
+INFO: [Synth 8-3886] merging instance 'InstructionDecode_Instruction_reg[21]' (FD) to 'InstructionDecode_Instruction_reg_rep_bsel[21]'
+INFO: [Synth 8-3886] merging instance 'InstructionDecode_Instruction_reg[22]' (FD) to 'InstructionDecode_Instruction_reg_rep_bsel[22]'
+INFO: [Synth 8-3886] merging instance 'InstructionDecode_Instruction_reg[23]' (FD) to 'InstructionDecode_Instruction_reg_rep_bsel[23]'
+INFO: [Synth 8-3886] merging instance 'InstructionDecode_Instruction_reg[24]' (FD) to 'InstructionDecode_Instruction_reg_rep_bsel[24]'
+INFO: [Synth 8-3886] merging instance 'InstructionDecode_Instruction_reg[25]' (FD) to 'InstructionDecode_Instruction_reg_rep_bsel[25]'
+INFO: [Synth 8-3886] merging instance 'Execute_SignImm_reg[31]' (FD) to 'Execute_SignImm_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Execute_SignImm_reg[30]' (FD) to 'Execute_SignImm_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Execute_SignImm_reg[29]' (FD) to 'Execute_SignImm_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Execute_SignImm_reg[28]' (FD) to 'Execute_SignImm_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Execute_SignImm_reg[27]' (FD) to 'Execute_SignImm_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Execute_SignImm_reg[26]' (FD) to 'Execute_SignImm_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Execute_SignImm_reg[25]' (FD) to 'Execute_SignImm_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Execute_SignImm_reg[24]' (FD) to 'Execute_SignImm_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Execute_SignImm_reg[23]' (FD) to 'Execute_SignImm_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Execute_SignImm_reg[22]' (FD) to 'Execute_SignImm_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Execute_SignImm_reg[21]' (FD) to 'Execute_SignImm_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Execute_SignImm_reg[20]' (FD) to 'Execute_SignImm_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Execute_SignImm_reg[19]' (FD) to 'Execute_SignImm_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Execute_SignImm_reg[18]' (FD) to 'Execute_SignImm_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Execute_SignImm_reg[17]' (FD) to 'Execute_SignImm_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Execute_SignImm_reg[16]' (FD) to 'Execute_SignImm_reg[15]'
+INFO: [Synth 8-3886] merging instance 'InstructionDecode_Instruction_reg[15]' (FD) to 'InstructionDecode_Instruction_reg_rep_bsel[25]'
+INFO: [Synth 8-3886] merging instance 'InstructionDecode_Instruction_reg[14]' (FD) to 'InstructionDecode_Instruction_reg_rep_bsel[25]'
+INFO: [Synth 8-3886] merging instance 'InstructionDecode_Instruction_reg[10]' (FD) to 'InstructionDecode_Instruction_reg_rep_bsel[25]'
+INFO: [Synth 8-3886] merging instance 'InstructionDecode_Instruction_reg[9]' (FD) to 'InstructionDecode_Instruction_reg_rep_bsel[25]'
+INFO: [Synth 8-3886] merging instance 'InstructionDecode_Instruction_reg[8]' (FD) to 'InstructionDecode_Instruction_reg_rep_bsel[25]'
+INFO: [Synth 8-3886] merging instance 'InstructionDecode_Instruction_reg[7]' (FD) to 'InstructionDecode_Instruction_reg_rep_bsel[25]'
+INFO: [Synth 8-3886] merging instance 'InstructionDecode_Instruction_reg[6]' (FD) to 'InstructionDecode_Instruction_reg_rep_bsel[25]'
+INFO: [Synth 8-3886] merging instance 'InstructionDecode_Instruction_reg_rep_bsel[20]' (FD) to 'InstructionDecode_Instruction_reg_rep_bsel[25]'
+INFO: [Synth 8-3886] merging instance 'InstructionDecode_Instruction_reg_rep_bsel[24]' (FD) to 'InstructionDecode_Instruction_reg_rep_bsel[25]'
+INFO: [Synth 8-3886] merging instance 'InstructionDecode_Instruction_reg_rep_bsel[25]' (FD) to 'InstructionDecode_Instruction_reg[30]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InstructionDecode_Instruction_reg[30] )
+INFO: [Synth 8-3886] merging instance 'Execute_SignImm_reg[15]' (FD) to 'Execute_RtDest_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Execute_SignImm_reg[14]' (FD) to 'Execute_RtDest_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Execute_SignImm_reg[10]' (FD) to 'Execute_RtDest_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Execute_SignImm_reg[9]' (FD) to 'Execute_RtDest_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Execute_SignImm_reg[8]' (FD) to 'Execute_RtDest_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Execute_SignImm_reg[7]' (FD) to 'Execute_RtDest_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Execute_SignImm_reg[6]' (FD) to 'Execute_RtDest_reg[4]'
+INFO: [Synth 8-3886] merging instance 'InstructionDecode_Instruction_reg[30]' (FD) to 'Execute_RtDest_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Execute_RtDest_reg[4] )
+INFO: [Synth 8-3886] merging instance 'Execute_RtDest_reg[4]' (FD) to 'MemoryStage_WriteReg_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MemoryStage_WriteReg_reg[4] )
+INFO: [Synth 8-3886] merging instance 'WritebackStage_WriteReg_reg[4]' (FD) to 'MemoryStage_WriteReg_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MemoryStage_WriteReg_reg[4] )
+INFO: [Synth 8-3886] merging instance 'InstructionDecode_RegWriteAddr_reg[4]' (FD) to 'MemoryStage_WriteReg_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MemoryStage_WriteReg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\InstructionFetchInst/pc_reg_rep[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 880.191 ; gain = 570.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------------+------------+---------------+----------------+
+|Module Name       | RTL Object | Depth x Width | Implemented As | 
++------------------+------------+---------------+----------------+
+|InstructionMemory | p_0_out    | 1024x8        | LUT            | 
+|InstructionMemory | p_0_out    | 1024x8        | LUT            | 
+|InstructionMemory | p_0_out    | 1024x8        | LUT            | 
+|InstructionMemory | p_0_out    | 1024x8        | LUT            | 
+|MipsProc          | p_0_out    | 1024x8        | LUT            | 
+|MipsProc          | p_0_out    | 1024x8        | LUT            | 
+|MipsProc          | p_0_out    | 1024x8        | LUT            | 
+|MipsProc          | p_0_out    | 1024x8        | LUT            | 
++------------------+------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping  Report (see note below)
+-------NONE-------
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+--------------------------------------+-----------+----------------------+-------------------+
+|Module Name | RTL Object                           | Inference | Size (Depth x Width) | Primitives        | 
++------------+--------------------------------------+-----------+----------------------+-------------------+
+|MipsProc    | MemoryInst/mem_instance/mips_mem_reg | Implied   | 1 K x 32             | RAM256X1S x 128   | 
++------------+--------------------------------------+-----------+----------------------+-------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance i_0/InstructionDecodeInst/RegisterFile_inst/arrayRegisters_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/InstructionDecodeInst/RegisterFile_inst/arrayRegisters_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 880.191 ; gain = 570.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
+-------NONE-------
+
+Distributed RAM: Final Mapping  Report
++------------+--------------------------------------+-----------+----------------------+-------------------+
+|Module Name | RTL Object                           | Inference | Size (Depth x Width) | Primitives        | 
++------------+--------------------------------------+-----------+----------------------+-------------------+
+|MipsProc    | MemoryInst/mem_instance/mips_mem_reg | Implied   | 1 K x 32             | RAM256X1S x 128   | 
++------------+--------------------------------------+-----------+----------------------+-------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance InstructionDecodeInst/RegisterFile_inst/arrayRegisters_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance InstructionDecodeInst/RegisterFile_inst/arrayRegisters_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 880.191 ; gain = 570.059
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 880.191 ; gain = 570.059
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 880.191 ; gain = 570.059
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 880.191 ; gain = 570.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 880.191 ; gain = 570.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 880.191 ; gain = 570.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 880.191 ; gain = 570.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+---------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                              | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|MipsProc    | InstructionDecode_RegWriteEn_reg      | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|MipsProc    | InstructionDecode_RegWriteAddr_reg[3] | 3      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|MipsProc    | WritebackStage_MemtoReg_reg           | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+---------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    10|
+|3     |LUT1     |     3|
+|4     |LUT2     |    58|
+|5     |LUT3     |    33|
+|6     |LUT4     |    47|
+|7     |LUT5     |   187|
+|8     |LUT6     |   623|
+|9     |RAMB18E1 |     2|
+|10    |SRL16E   |     6|
+|11    |FDCE     |    34|
+|12    |FDRE     |   145|
+|13    |IBUF     |     2|
+|14    |OBUF     |    32|
++------+---------+------+
+
+Report Instance Areas: 
++------+------------------------+------------------+------+
+|      |Instance                |Module            |Cells |
++------+------------------------+------------------+------+
+|1     |top                     |                  |  1183|
+|2     |  InstructionDecodeInst |InstructionDecode |    23|
+|3     |    RegisterFile_inst   |RegisterFile      |    23|
+|4     |  InstructionFetchInst  |InstructionFetch  |    77|
+|5     |  executeInst           |execute           |   848|
+|6     |    alu                 |alu4              |   813|
++------+------------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 880.191 ; gain = 570.059
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 880.191 ; gain = 570.059
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 880.191 ; gain = 570.059
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 880.191 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+226 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:40 . Memory (MB): peak = 880.191 ; gain = 579.559
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 880.191 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Emilio/OneDrive/Documents/DSDII/Lab06/Lab06/Lab06.runs/synth_1/MipsProc.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MipsProc_utilization_synth.rpt -pb MipsProc_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 21 14:55:01 2024...

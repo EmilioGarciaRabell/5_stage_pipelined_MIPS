@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_2" LaunchPart="xc7a35tcpg236-1" LaunchTime="1711823751">
+  <File Type="BITSTR-BMM" Name="execute_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="execute_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="execute_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="execute_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="execute.tcl"/>
+  <File Type="OPT-TIMING" Name="execute_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="execute_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="execute_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="execute_reports.tcl"/>
+  <File Type="OPT-DRC" Name="execute_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="execute.hwdef"/>
+  <File Type="PWROPT-DCP" Name="execute_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="execute_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="execute_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="execute_placed.dcp"/>
+  <File Type="PLACE-IO" Name="execute_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="execute_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="execute_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="execute_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="execute_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="execute_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="execute_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="execute.bgn"/>
+  <File Type="PLACE-TIMING" Name="execute_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="execute_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="execute.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="execute_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="execute_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="execute_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="execute.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="execute_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="execute_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="execute_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="execute_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="execute_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="execute_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="execute.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="execute_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="execute.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="execute_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="execute_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="execute.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="execute_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="execute_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="execute_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="execute_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="execute_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="execute_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="execute_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="execute_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="execute_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="execute_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="execute_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="execute_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="execute_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="execute_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="execute_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="execute_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="execute_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="execute_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="execute_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="execute.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="execute_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="execute.rbt"/>
+  <File Type="BITSTR-NKY" Name="execute.nky"/>
+  <File Type="BG-DRC" Name="execute.drc"/>
+  <File Type="RDI-RDI" Name="execute.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/FullAdder.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HalfAddr.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/global_pkg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/LogAND.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/LogOR.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/LogXOR.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Multiplier.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RplCarryAdr.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ShiftArithmeticRight.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/and_mult.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sllN.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/srlN.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/alu4.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Execute.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/notN.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="execute"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/Constrns.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Mar  7 19:41:54 2024
+# Process ID: 10504
+# Current directory: C:/Users/Emilio/OneDrive/Documents/DSDII/Lab03Shit/lab03/lab03.runs/synth_1
+# Command line: vivado.exe -log InstructionDecode.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source InstructionDecode.tcl
+# Log file: C:/Users/Emilio/OneDrive/Documents/DSDII/Lab03Shit/lab03/lab03.runs/synth_1/InstructionDecode.vds
+# Journal file: C:/Users/Emilio/OneDrive/Documents/DSDII/Lab03Shit/lab03/lab03.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source InstructionDecode.tcl -notrace

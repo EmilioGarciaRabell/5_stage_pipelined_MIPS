@@ -1,0 +1,7 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/Emilio/OneDrive/Documents/DSDII/Lab03Shit/lab03/lab03.sim/sim_1/synth/timing/xsim/InstructionDecodeTB_time_synth.v,1709858607,verilog,,,,InstructionDecode;RAM32M_HD1;RAM32M_HD10;RAM32M_HD11;RAM32M_HD2;RAM32M_HD3;RAM32M_HD4;RAM32M_HD5;RAM32M_HD6;RAM32M_HD7;RAM32M_HD8;RAM32M_HD9;RAM32M_UNIQ_BASE_;RegisterFile;glbl,,,,,,,,
+C:/Users/Emilio/OneDrive/Documents/DSDII/Lab03Shit/lab03/lab03.srcs/sim_1/new/InstructionDecodeTB.vhd,1709661098,vhdl,,,,instructiondecodetb,,,,,,,,
+C:/Users/Emilio/OneDrive/Documents/DSDII/Lab03Shit/lab03/lab03.srcs/sim_1/new/InstructionFetchTB.vhd,1709004426,vhdl,,,,instructionfetchtb,,,,,,,,

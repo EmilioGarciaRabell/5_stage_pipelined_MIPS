@@ -1,0 +1,14 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/Emilio/OneDrive/Documents/DSDII/LAB01/LAB01.srcs/sim_1/new/aluTB.vhd,1707428953,vhdl,,,,alutb,,,,,,,,
+C:/Users/Emilio/OneDrive/Documents/DSDII/LAB01/LAB01.srcs/sources_1/new/LogAND.vhd,1706634655,vhdl,,,,logand,,,,,,,,
+C:/Users/Emilio/OneDrive/Documents/DSDII/LAB01/LAB01.srcs/sources_1/new/LogOR.vhd,1706634649,vhdl,,,,logor,,,,,,,,
+C:/Users/Emilio/OneDrive/Documents/DSDII/LAB01/LAB01.srcs/sources_1/new/LogXOR.vhd,1706634657,vhdl,,,,logxor,,,,,,,,
+C:/Users/Emilio/OneDrive/Documents/DSDII/LAB01/LAB01.srcs/sources_1/new/ShiftArithmeticRight.vhd,1707420233,vhdl,C:/Users/Emilio/OneDrive/Documents/DSDII/LAB01/LAB01.srcs/sources_1/new/alu4.vhd,,,shiftarithmeticright,,,,,,,,
+C:/Users/Emilio/OneDrive/Documents/DSDII/LAB01/LAB01.srcs/sources_1/new/alu4.vhd,1707427043,vhdl2008,C:/Users/Emilio/OneDrive/Documents/DSDII/LAB01/LAB01.srcs/sim_1/new/aluTB.vhd,,,alu4,,,,,,,,
+C:/Users/Emilio/OneDrive/Documents/DSDII/LAB01/LAB01.srcs/sources_1/new/global_pkg.vhd,1707426142,vhdl,C:/Users/Emilio/OneDrive/Documents/DSDII/LAB01/LAB01.srcs/sim_1/new/aluTB.vhd;C:/Users/Emilio/OneDrive/Documents/DSDII/LAB01/LAB01.srcs/sources_1/new/alu4.vhd,,,globals,,,,,,,,
+C:/Users/Emilio/OneDrive/Documents/DSDII/LAB01/LAB01.srcs/sources_1/new/notN.vhd,1706192410,vhdl,,,,notn,,,,,,,,
+C:/Users/Emilio/OneDrive/Documents/DSDII/LAB01/LAB01.srcs/sources_1/new/sllN.vhd,1707420235,vhdl,C:/Users/Emilio/OneDrive/Documents/DSDII/LAB01/LAB01.srcs/sources_1/new/alu4.vhd,,,slln,,,,,,,,
+C:/Users/Emilio/OneDrive/Documents/DSDII/LAB01/LAB01.srcs/sources_1/new/srlN.vhd,1707420234,vhdl,C:/Users/Emilio/OneDrive/Documents/DSDII/LAB01/LAB01.srcs/sources_1/new/alu4.vhd,,,srln,,,,,,,,

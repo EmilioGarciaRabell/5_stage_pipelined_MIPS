@@ -1,0 +1,29 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/docs/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto c68f9503fd5043239d66474d8814247e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot executeTB_behav xil_defaultlib.executeTB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.globals
+Compiling architecture behave of entity xil_defaultlib.LogAND [logand_default]
+Compiling architecture behave of entity xil_defaultlib.LogOR [logor_default]
+Compiling architecture behave of entity xil_defaultlib.LogXOR [logxor_default]
+Compiling architecture behavioral of entity xil_defaultlib.sllN [slln_default]
+Compiling architecture behavioral of entity xil_defaultlib.srlN [srln_default]
+Compiling architecture behavioral of entity xil_defaultlib.ShiftArithmeticRight [shiftarithmeticright_default]
+Compiling architecture df of entity xil_defaultlib.FullAdder [fulladder_default]
+Compiling architecture behavioral of entity xil_defaultlib.RplCarryAdr [\RplCarryAdr(n=32)\]
+Compiling architecture behave of entity xil_defaultlib.and_mult [and_mult_default]
+Compiling architecture rtl of entity xil_defaultlib.halfaddr [halfaddr_default]
+Compiling architecture str of entity xil_defaultlib.multiplier [multiplier_default]
+Compiling architecture structural of entity xil_defaultlib.alu4 [alu4_default]
+Compiling architecture behavioral of entity xil_defaultlib.execute [execute_default]
+Compiling architecture behavioral of entity xil_defaultlib.executetb
+Built simulation snapshot executeTB_behav

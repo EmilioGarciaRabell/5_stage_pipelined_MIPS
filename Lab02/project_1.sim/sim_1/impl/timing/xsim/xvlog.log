@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Emilio/OneDrive/Documents/DSDII/LAB2Shit/project_1/project_1.sim/sim_1/impl/timing/xsim/RegisterFileTB_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM32M_UNIQ_BASE_
+INFO: [VRFC 10-311] analyzing module RAM32M_HD13
+INFO: [VRFC 10-311] analyzing module RAM32M_HD14
+INFO: [VRFC 10-311] analyzing module RAM32M_HD15
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Apr  6 17:33:23 2024
+# Process ID: 14284
+# Current directory: C:/Users/Emilio/OneDrive/Documents/DSDII/Lab05/lab05/lab05.runs/synth_2
+# Command line: vivado.exe -log WritebackStage.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source WritebackStage.tcl
+# Log file: C:/Users/Emilio/OneDrive/Documents/DSDII/Lab05/lab05/lab05.runs/synth_2/WritebackStage.vds
+# Journal file: C:/Users/Emilio/OneDrive/Documents/DSDII/Lab05/lab05/lab05.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source WritebackStage.tcl -notrace

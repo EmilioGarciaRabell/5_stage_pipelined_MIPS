@@ -1,0 +1,1 @@
+-wto "c7c733b3ae4546d282b7b14f7072d23d" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "MipsPTB_behav" "xil_defaultlib.MipsPTB" -log "elaborate.log" 

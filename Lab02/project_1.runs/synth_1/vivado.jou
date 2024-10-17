@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Feb 21 21:48:12 2024
+# Process ID: 27124
+# Current directory: C:/Users/Emilio/OneDrive/Documents/DSDII/LAB2Shit/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log RegisterFile.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RegisterFile.tcl
+# Log file: C:/Users/Emilio/OneDrive/Documents/DSDII/LAB2Shit/project_1/project_1.runs/synth_1/RegisterFile.vds
+# Journal file: C:/Users/Emilio/OneDrive/Documents/DSDII/LAB2Shit/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source RegisterFile.tcl -notrace

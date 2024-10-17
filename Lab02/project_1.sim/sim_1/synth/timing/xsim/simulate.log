@@ -1,0 +1,4 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Error: Mismatch in RD2 for test case 9
+Time: 1 us  Iteration: 0  Process: /RegisterFileTB/stim_proc  File: C:/Users/Emilio/OneDrive/Documents/DSDII/LAB2Shit/project_1/project_1.srcs/sim_1/new/RegisterFileTB.vhd

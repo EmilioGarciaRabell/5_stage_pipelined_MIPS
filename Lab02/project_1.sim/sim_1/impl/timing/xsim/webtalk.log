@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Feb 15 20:00:22 2024
+# Process ID: 4636
+# Current directory: C:/Users/Emilio/OneDrive/Documents/DSDII/LAB2Shit/project_1/project_1.sim/sim_1/impl/timing/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/Emilio/OneDrive/Documents/DSDII/LAB2Shit/project_1/project_1.sim/sim_1/impl/timing/xsim/xsim.dir/RegisterFileTB_time_impl/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Emilio/OneDrive/Documents/DSDII/LAB2Shit/project_1/project_1.sim/sim_1/impl/timing/xsim/webtalk.log
+# Journal file: C:/Users/Emilio/OneDrive/Documents/DSDII/LAB2Shit/project_1/project_1.sim/sim_1/impl/timing/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Emilio/OneDrive/Documents/DSDII/LAB2Shit/project_1/project_1.sim/sim_1/impl/timing/xsim/xsim.dir/RegisterFileTB_time_impl/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Feb 15 20:00:23 2024...

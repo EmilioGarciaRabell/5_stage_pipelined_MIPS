@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1713725654">
+  <File Type="ROUTE-PWR" Name="MipsProc_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="MipsProc.tcl"/>
+  <File Type="BITSTR-BMM" Name="MipsProc_bd.bmm"/>
+  <File Type="ROUTE-PWR-SUM" Name="MipsProc_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="MipsProc_reports.tcl"/>
+  <File Type="OPT-DCP" Name="MipsProc_opt.dcp"/>
+  <File Type="OPT-DRC" Name="MipsProc_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="MipsProc.hwdef"/>
+  <File Type="PWROPT-DCP" Name="MipsProc_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="MipsProc_placed.dcp"/>
+  <File Type="PLACE-IO" Name="MipsProc_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="MipsProc_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="MipsProc_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="MipsProc_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="MipsProc_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="MipsProc.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="MipsProc_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="MipsProc.bin"/>
+  <File Type="PHYSOPT-DCP" Name="MipsProc_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="MipsProc.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="MipsProc_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="MipsProc_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="MipsProc_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="MipsProc_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="MipsProc_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="MipsProc_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="MipsProc.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="MipsProc_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="MipsProc.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="MipsProc_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="MipsProc_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="MipsProc.sysdef"/>
+  <File Type="ROUTE-PWR-RPX" Name="MipsProc_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="MipsProc_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="MipsProc_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="MipsProc_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="MipsProc_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="MipsProc_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="MipsProc_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="MipsProc.vdi"/>
+  <File Type="ROUTE-BUS-SKEW" Name="MipsProc_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="MipsProc_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="MipsProc_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="MipsProc_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="MipsProc_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="MipsProc.bit"/>
+  <File Type="BITSTR-RBT" Name="MipsProc.rbt"/>
+  <File Type="BITSTR-NKY" Name="MipsProc.nky"/>
+  <File Type="BG-DRC" Name="MipsProc.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/ControlUnit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DataMemory.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Execute.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FullAdder.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HalfAddr.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/global_pkg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RegisterFile.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/InstructionDecode.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/InstructionMemory.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/InstructionFetch.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/LogAND.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/LogOR.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/LogXOR.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MemoryStage.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Multiplier.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RplCarryAdr.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ShiftArithmeticRight.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/WritebackStage.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/and_mult.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/bcd_seven_seg_converter.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/seven_seg_controller.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sllN.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/srlN.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/alu4.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MipsProc.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/notN.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="MipsProc"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
